@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
+#include <string>
+#include "ParkedCar.h"
+#include "ParkingMeter.h"
+#include "PoliceOfficer.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	ParkedCar vroom("Honda", "Civic", "Blue", "12abce", 30);
+
+	PoliceOfficer Officer;
+
+	set
+
+	Officer.determinTicket();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

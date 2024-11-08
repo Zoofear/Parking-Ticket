@@ -56,6 +56,8 @@ public:
 		return minsparked;
 	}
 
+	
+
 	//Outputs all the variables
 	void printInfo()
 	{
@@ -71,5 +73,4 @@ private:
 	string color;
 	string license;
 	int minsparked;
-
 };
