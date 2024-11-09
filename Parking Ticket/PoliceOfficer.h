@@ -5,30 +5,63 @@
 #include "ParkingMeter.h"
 using namespace std;
 
+
 class PoliceOfficer
 {
 public:
 
 	//Constructor
 
-	PoliceOfficer(string b = "BADGE") : badge(b) {}
+	PoliceOfficer(string n = "NAME", string b = "BADGE") : name(n), badge(b) {}
 
 	//Functions
 
 	void setParkedCarPointer(ParkedCar* x)
 	{
-		obj = x;
+		obj1 = x;
 	}
 
-	void determinTicket()
+	void setParkingMeterPointer(ParkingMeter* x)
 	{
-		if (obj != nullptr)
+		obj2 = x;
+	}
+
+	int determinTicket()
+	{
+
+		if (obj1 != nullptr && obj2 != nullptr)
 		{
-			cout << obj->returnMinsParked() << endl;
+			int parked = obj1->returnMinsParked();
+
+			int timebought = obj2->returnTimeBought();
+
+			if (parked > timebought)
+			{
+				return 1;
+			}
+			else
+			{
+				return 0;
+			}
 		}
 	}
 
+	string returnName()
+	{
+		return name;
+	}
+
+	string returnBadge()
+	{
+		return badge;
+	}
+	
+
 private:
+	
+	string name;
 	string badge;
-	ParkedCar* obj = nullptr;
-}
+	ParkedCar* obj1 = nullptr;
+	ParkingMeter* obj2 = nullptr;
+	
+};

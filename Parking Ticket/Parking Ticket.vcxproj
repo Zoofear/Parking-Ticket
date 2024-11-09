@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Parking Ticket.cpp" />
+    <ClCompile Include="Parking Ticket Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ParkedCar.h" />

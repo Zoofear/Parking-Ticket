@@ -6,17 +6,34 @@
 #include "ParkedCar.h"
 #include "ParkingMeter.h"
 #include "PoliceOfficer.h"
+#include "ParkingTicket.h"
 
 int main()
 {
 	ParkedCar vroom("Honda", "Civic", "Blue", "12abce", 30);
 
-	PoliceOfficer Officer;
+	ParkingMeter meter(20, 25, 10, 10);
 
-	set
+	PoliceOfficer Officer("Noah Young", "badge");
 
-	Officer.determinTicket();
+	ParkingTicket ticket(vroom, meter, Officer);
+	
+	Officer.setParkedCarPointer(&vroom);
 
+	Officer.setParkingMeterPointer(&meter);
+
+	int tf = Officer.determinTicket();
+
+	if (tf == 1)
+	{
+		ticket.printTicket();
+	}
+	else
+	{
+		cout << "no ticket wooo";
+	}
+
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

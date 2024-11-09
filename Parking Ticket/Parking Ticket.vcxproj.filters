@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Parking Ticket.cpp">
+    <ClCompile Include="Parking Ticket Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ParkedCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingMeter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingTicket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PoliceOfficer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
